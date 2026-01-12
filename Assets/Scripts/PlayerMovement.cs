@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float maxChargeTime;
     [SerializeField] private float doubleJumpForce;
     [SerializeField] private float dashForce;
+    [SerializeField] private float dashDuration;
 
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
@@ -17,10 +18,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D body;
     private bool isGrounded;
     private bool isCharging;
+    private bool isDashing;
     private bool hasMovedInAir;
     private float chargeTimer;
 
-    private float lastNonZeroDir;
+    private float lastNonZeroDir = 1;
     private float timeSinceLastInput;
     public float inputMemoryTime = 0.1f;
 
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDashing) return;
         CheckGround();
         float currentInput = Input.GetAxisRaw("Horizontal");
 
@@ -90,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
                 }
                 else if(Input.GetKeyDown(KeyCode.LeftShift))
                 {
-                    Dash();
+                    StartCoroutine(Dash());
                     hasMovedInAir = true;
                 }
             }
@@ -127,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
             launchVec = new Vector2(0, launchForce);
         }
 
-        body.linearVelocity = Vector2.zero;
+        
         body.AddForce(launchVec, ForceMode2D.Impulse);
 
         chargeTimer = 0f;
@@ -141,13 +144,24 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Double Jump");
     }
 
-    void Dash()
+    System.Collections.IEnumerator Dash()
     {
-        float dashDirection = Input.GetAxisRaw("Horizontal");
-        body.linearVelocity = Vector2.zero;
-        body.AddForce(new Vector2(dashDirection * dashForce, 0), ForceMode2D.Impulse);
+        isDashing = true;
+        hasMovedInAir = true;
 
-        Debug.Log("Dash");
+        float originalGravity = body.gravityScale;
+        body.gravityScale = 0;
+        float dashDirection = Input.GetAxisRaw("Horizontal");
+        if (dashDirection == 0)
+        {
+            dashDirection = lastNonZeroDir;
+        }
+        body.linearVelocity = new Vector2(dashDirection * dashForce, 0);
+        yield return new WaitForSeconds(dashDuration);
+        body.gravityScale = originalGravity;
+        body.linearVelocity = Vector2.zero;
+        isDashing = false;
+
     }
 
     void OnDrawGizmos()
