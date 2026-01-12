@@ -1,0 +1,1521 @@
+fileFormatVersion: 2
+guid: 83679bf83af1aa54c81913c21a0fdf18
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4128385838683643861
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_0
+  - first:
+      213: 6787941128879324485
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_1
+  - first:
+      213: 6543899400554715643
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_2
+  - first:
+      213: -2031717556977693315
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_3
+  - first:
+      213: 7190258232074032397
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_4
+  - first:
+      213: 3291401640792689856
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_5
+  - first:
+      213: 9153135032738906935
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_6
+  - first:
+      213: -8661707635826577307
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_7
+  - first:
+      213: 3610231196110006562
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_8
+  - first:
+      213: -355786127853192034
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_9
+  - first:
+      213: -3992317150425159271
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_10
+  - first:
+      213: -4524822835529961502
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_11
+  - first:
+      213: 7023213164540475771
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_12
+  - first:
+      213: -8298665757700783719
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_13
+  - first:
+      213: 5946944501997053329
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_14
+  - first:
+      213: -9115487042551286111
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_15
+  - first:
+      213: 2182237273162864434
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_16
+  - first:
+      213: -7791102523266822645
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_17
+  - first:
+      213: -6305822840742188318
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_18
+  - first:
+      213: -107054390334971424
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_19
+  - first:
+      213: -7533769953981893378
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_20
+  - first:
+      213: -5778631695731029739
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_21
+  - first:
+      213: -8911880710526281781
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_22
+  - first:
+      213: 5596415351934745930
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_23
+  - first:
+      213: 5406621537117778118
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_24
+  - first:
+      213: -7857682040518720639
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_25
+  - first:
+      213: -7900707508959803679
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_26
+  - first:
+      213: -1755912867145692153
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_27
+  - first:
+      213: -823182626258091174
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_28
+  - first:
+      213: -8270109387718554365
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_29
+  - first:
+      213: -5857016078025335803
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_30
+  - first:
+      213: -6494688598070688278
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_31
+  - first:
+      213: 3541225617129021591
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_32
+  - first:
+      213: -499368367592130546
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_33
+  - first:
+      213: -7375619830304434760
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_34
+  - first:
+      213: 1129719744137179214
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_35
+  - first:
+      213: -7777345180263705708
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_36
+  - first:
+      213: 4095640853584400990
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_37
+  - first:
+      213: 4516178022149575771
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_38
+  - first:
+      213: 1198926813104422579
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_39
+  - first:
+      213: -2371381816201748556
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_40
+  - first:
+      213: -51881990364923222
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_41
+  - first:
+      213: -4055499476970414980
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_42
+  - first:
+      213: -3666196470822309461
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_43
+  - first:
+      213: 6795919223647687578
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_44
+  - first:
+      213: 501872296469805503
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_45
+  - first:
+      213: 2184991495343453206
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_46
+  - first:
+      213: 7586815161307274748
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_47
+  - first:
+      213: -1862386978656714329
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_48
+  - first:
+      213: 2218553566761163079
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_49
+  - first:
+      213: -3774974322195213657
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_50
+  - first:
+      213: 8885494091298101079
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_51
+  - first:
+      213: 4893172276832326197
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_52
+  - first:
+      213: 783652581131990675
+    second: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 165
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dbd1f1e7c933e50800000000000000
+      internalID: 6787941128879324485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 165
+        width: 52
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf994ff65d990da50800000000000000
+      internalID: 6543899400554715643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 165
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d8b6c75a3edc3e0800000000000000
+      internalID: -2031717556977693315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 165
+        width: 52
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05d91634cde8c360800000000000000
+      internalID: 7190258232074032397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_5
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 164
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc069c8a586dad20800000000000000
+      internalID: 3291401640792689856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 165
+        width: 52
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733069f11d7760f70800000000000000
+      internalID: 9153135032738906935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 165
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560b4420cce6bc780800000000000000
+      internalID: -8661707635826577307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_8
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 166
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229ab21252e1a1230800000000000000
+      internalID: 3610231196110006562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 166
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c7c49d66eff0bf0800000000000000
+      internalID: -355786127853192034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_10
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 165
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999653234b07898c0800000000000000
+      internalID: -3992317150425159271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_11
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 165
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef29a8ca999431c0800000000000000
+      internalID: -4524822835529961502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 165
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79384e9927777160800000000000000
+      internalID: 7023213164540475771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 169
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9910c8a267735dc80800000000000000
+      internalID: -8298665757700783719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_14
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 165
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1952f7c248ac78250800000000000000
+      internalID: 5946944501997053329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_15
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 165
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6fd0aa4d84f7180800000000000000
+      internalID: -9115487042551286111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_16
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 165
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2375d7aec3dd84e10800000000000000
+      internalID: 2182237273162864434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_17
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 165
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e080cb88170e390800000000000000
+      internalID: -7791102523266822645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_18
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 165
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea640939873d78a0800000000000000
+      internalID: -6305822840742188318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_19
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 165
+        width: 50
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e12074699aa38ef0800000000000000
+      internalID: -107054390334971424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_20
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 165
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4f569742ca27790800000000000000
+      internalID: -7533769953981893378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_21
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 164
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5198328d61d2ecfa0800000000000000
+      internalID: -5778631695731029739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_22
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 170
+        width: 36
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7dc6006b3a25480800000000000000
+      internalID: -8911880710526281781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_23
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 170
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4dfc9b8c167aad40800000000000000
+      internalID: 5596415351934745930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_24
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 160
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0b1ea74ad280b40800000000000000
+      internalID: 5406621537117778118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 97
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1834ae0e0d7e3f290800000000000000
+      internalID: -7857682040518720639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 59
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6803e516c0b5290800000000000000
+      internalID: -7900707508959803679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 59
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c4e31fc8eb1a7e0800000000000000
+      internalID: -1755912867145692153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_28
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 72
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a530d9843c77394f0800000000000000
+      internalID: -823182626258091174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_29
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 60
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d896b245baa3d80800000000000000
+      internalID: -8270109387718554365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_30
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 72
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c5c89a8e2b7bea0800000000000000
+      internalID: -5857016078025335803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 60
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae58731612b3ed5a0800000000000000
+      internalID: -6494688598070688278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_32
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 59
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7902d72cfe5f42130800000000000000
+      internalID: 3541225617129021591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_33
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 59
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08ba9d8d13e119f0800000000000000
+      internalID: -499368367592130546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_34
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 59
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5906097d884a990800000000000000
+      internalID: -7375619830304434760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_35
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 70
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40ba0d2f129daf00800000000000000
+      internalID: 1129719744137179214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_36
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 69
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49319c2c3c1511490800000000000000
+      internalID: -7777345180263705708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_37
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 70
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52d97d18a3a6d830800000000000000
+      internalID: 4095640853584400990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_38
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 68
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54d6a0cbffacae30800000000000000
+      internalID: 4516178022149575771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 57
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3beb7c6959173a010800000000000000
+      internalID: 1198926813104422579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_40
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 57
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf59726dc8271fd0800000000000000
+      internalID: -2371381816201748556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_41
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaafe0aca9da74ff0800000000000000
+      internalID: -51881990364923222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_42
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c556076b8f7b7c0800000000000000
+      internalID: -4055499476970414980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba178dfebbd0f1dc0800000000000000
+      internalID: -3666196470822309461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_44
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93d4cf0784ff4e50800000000000000
+      internalID: 6795919223647687578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_45
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 2
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb931b1d13207f600800000000000000
+      internalID: 501872296469805503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_46
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614323d3036a25e10800000000000000
+      internalID: 2184991495343453206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_47
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd944a4138c94960800000000000000
+      internalID: 7586815161307274748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_48
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a18ad609e87726e0800000000000000
+      internalID: -1862386978656714329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_49
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74999fde6b2e9ce10800000000000000
+      internalID: 2218553566761163079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_50
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 16
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a25559cad89c9bc0800000000000000
+      internalID: -3774974322195213657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_51
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 16
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757d7a57ccd9f4b70800000000000000
+      internalID: 8885494091298101079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_52
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 16
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5325169b24a08e340800000000000000
+      internalID: 4893172276832326197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_53
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 16
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396b0bdded710ea00800000000000000
+      internalID: 783652581131990675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 165
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb5374c2eb814946815048e660ae2c2
+      internalID: 4128385838683643861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5a139e7559d1006428a8021211890f4c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_0: 4128385838683643861
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_1: 6787941128879324485
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_10: -3992317150425159271
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_11: -4524822835529961502
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_12: 7023213164540475771
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_13: -8298665757700783719
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_14: 5946944501997053329
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_15: -9115487042551286111
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_16: 2182237273162864434
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_17: -7791102523266822645
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_18: -6305822840742188318
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_19: -107054390334971424
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_2: 6543899400554715643
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_20: -7533769953981893378
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_21: -5778631695731029739
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_22: -8911880710526281781
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_23: 5596415351934745930
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_24: 5406621537117778118
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_25: -7857682040518720639
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_26: -7900707508959803679
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_27: -1755912867145692153
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_28: -823182626258091174
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_29: -8270109387718554365
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_3: -2031717556977693315
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_30: -5857016078025335803
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_31: -6494688598070688278
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_32: 3541225617129021591
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_33: -499368367592130546
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_34: -7375619830304434760
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_35: 1129719744137179214
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_36: -7777345180263705708
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_37: 4095640853584400990
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_38: 4516178022149575771
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_39: 1198926813104422579
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_4: 7190258232074032397
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_40: -2371381816201748556
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_41: -51881990364923222
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_42: -4055499476970414980
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_43: -3666196470822309461
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_44: 6795919223647687578
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_45: 501872296469805503
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_46: 2184991495343453206
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_47: 7586815161307274748
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_48: -1862386978656714329
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_49: 2218553566761163079
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_5: 3291401640792689856
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_50: -3774974322195213657
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_51: 8885494091298101079
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_52: 4893172276832326197
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_53: 783652581131990675
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_6: 9153135032738906935
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_7: -8661707635826577307
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_8: 3610231196110006562
+      LCD Handhelds - Tamagotchi M!x - Characters - Hello Kitty_9: -355786127853192034
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

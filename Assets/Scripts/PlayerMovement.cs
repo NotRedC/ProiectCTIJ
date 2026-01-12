@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.WSA;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
 
     private Rigidbody2D body;
+    private Animator anim; // REFERINTA NOUA
+    private SpriteRenderer sprite; // PENTRU FLIP
+
     private bool isGrounded;
     private bool isCharging;
     private bool hasMovedInAir;
@@ -24,28 +26,49 @@ public class PlayerMovement : MonoBehaviour
     private float timeSinceLastInput;
     public float inputMemoryTime = 0.1f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>(); // INITIALIZARE
+        sprite = GetComponent<SpriteRenderer>(); // INITIALIZARE
     }
 
-    // Update is called once per frame
     void Update()
     {
         CheckGround();
         float currentInput = Input.GetAxisRaw("Horizontal");
 
+        // GESTIONARE FLIP (STANGA/DREAPTA)
+        if (currentInput > 0) sprite.flipX = false;
+        else if (currentInput < 0) sprite.flipX = true;
+
         if (currentInput != 0)
         {
-            lastNonZeroDir = currentInput; // Remember this direction
-            timeSinceLastInput = 0;        // Reset the timer
+            lastNonZeroDir = currentInput;
+            timeSinceLastInput = 0;
         }
         else
         {
-            timeSinceLastInput += Time.deltaTime; // Track how long it's been
+            timeSinceLastInput += Time.deltaTime;
         }
+
         HandleInput();
+        UpdateAnimations(currentInput); // FUNCTIE NOUA
+    }
+
+    void UpdateAnimations(float input)
+    {
+        if (anim == null) return;
+
+        // Trimitem datele catre Animator
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isCharging", isCharging);
+
+        // Viteza orizontala pentru animatia de Walk
+        anim.SetFloat("Speed", Mathf.Abs(input));
+
+        // Viteza pe verticala (pentru a sti daca urcam sau cadem)
+        anim.SetFloat("yVelocity", body.linearVelocity.y);
     }
 
     void CheckGround()
@@ -53,11 +76,11 @@ public class PlayerMovement : MonoBehaviour
         bool wasGrounded = isGrounded;
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-            if(isGrounded && !wasGrounded)
-            {
-                hasMovedInAir = false;
-                body.linearVelocity = Vector2.zero;
-            }
+        if (isGrounded && !wasGrounded)
+        {
+            hasMovedInAir = false;
+            body.linearVelocity = Vector2.zero;
+        }
     }
 
     void HandleInput()
@@ -69,11 +92,14 @@ public class PlayerMovement : MonoBehaviour
                 isCharging = true;
                 chargeTimer += Time.deltaTime;
                 body.linearVelocity = Vector2.zero;
-                //Debug.Log("Charging: " + chargeTimer);
             }
             else if (Input.GetKeyUp(KeyCode.Space))
             {
                 Launch();
+            }
+            else
+            {
+                isCharging = false; // Reset daca nu apasa
             }
         }
         else
@@ -81,14 +107,14 @@ public class PlayerMovement : MonoBehaviour
             isCharging = false;
             chargeTimer = 0;
 
-            if(!hasMovedInAir)
+            if (!hasMovedInAir)
             {
-                if(Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     DoubleJump();
                     hasMovedInAir = true;
                 }
-                else if(Input.GetKeyDown(KeyCode.LeftShift))
+                else if (Input.GetKeyDown(KeyCode.LeftShift))
                 {
                     Dash();
                     hasMovedInAir = true;
@@ -100,15 +126,10 @@ public class PlayerMovement : MonoBehaviour
     void Launch()
     {
         isCharging = false;
-
         float chargePercent = Mathf.Clamp01(chargeTimer / maxChargeTime);
         float launchForce = Mathf.Lerp(minJumpForce, maxJumpForce, chargePercent);
-        //Debug.Log("Launch Force: " + launchForce);
-        Vector2 launchVec;
 
         float horizontalDir = 0;
-
-       
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             horizontalDir = Input.GetAxisRaw("Horizontal");
@@ -118,43 +139,35 @@ public class PlayerMovement : MonoBehaviour
             horizontalDir = lastNonZeroDir;
         }
 
-        if (horizontalDir != 0)
-        {
-            launchVec = new Vector2(horizontalDir * (launchForce * 0.6f), launchForce);
-        }
-        else
-        {
-            launchVec = new Vector2(0, launchForce);
-        }
+        Vector2 launchVec = (horizontalDir != 0)
+            ? new Vector2(horizontalDir * (launchForce * 0.6f), launchForce)
+            : new Vector2(0, launchForce);
 
         body.linearVelocity = Vector2.zero;
         body.AddForce(launchVec, ForceMode2D.Impulse);
-
         chargeTimer = 0f;
+
+        if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
     }
 
     void DoubleJump()
     {
-        body.linearVelocity = new Vector2(body.linearVelocityX, 0);
+        body.linearVelocity = new Vector2(body.linearVelocity.x, 0);
         body.AddForce(Vector2.up * doubleJumpForce, ForceMode2D.Impulse);
-
-        Debug.Log("Double Jump");
+        if (anim != null) anim.SetTrigger("doubleJump");
     }
 
     void Dash()
     {
-        float dashDirection = Input.GetAxisRaw("Horizontal");
+        float dashDirection = (Input.GetAxisRaw("Horizontal") != 0) ? Input.GetAxisRaw("Horizontal") : (sprite.flipX ? -1 : 1);
         body.linearVelocity = Vector2.zero;
         body.AddForce(new Vector2(dashDirection * dashForce, 0), ForceMode2D.Impulse);
-
-        Debug.Log("Dash");
     }
 
     void OnDrawGizmos()
     {
         if (groundCheck != null)
         {
-            // If grounded, draw Green. If air, draw Red.
             Gizmos.color = isGrounded ? Color.green : Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
