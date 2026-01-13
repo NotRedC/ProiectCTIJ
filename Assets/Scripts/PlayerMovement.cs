@@ -39,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
         float currentInput = Input.GetAxisRaw("Horizontal");
 
         // GESTIONARE FLIP (STANGA/DREAPTA)
-        if (currentInput > 0) sprite.flipX = false;
-        else if (currentInput < 0) sprite.flipX = true;
+        if (currentInput > 0) sprite.flipX = true;
+        else if (currentInput < 0) sprite.flipX = false;
 
         if (currentInput != 0)
         {
