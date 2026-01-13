@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.WSA;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,9 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
+    public string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
 
     private Rigidbody2D body;
     private bool isGrounded;
+    private bool isOnIce; // variabila noua
     private bool isCharging;
     private bool isDashing;
     private bool hasMovedInAir;
@@ -26,13 +26,11 @@ public class PlayerMovement : MonoBehaviour
     private float timeSinceLastInput;
     public float inputMemoryTime = 0.1f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isDashing) return;
@@ -41,12 +39,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (currentInput != 0)
         {
-            lastNonZeroDir = currentInput; // Remember this direction
-            timeSinceLastInput = 0;        // Reset the timer
+            lastNonZeroDir = currentInput;
+            timeSinceLastInput = 0;
         }
         else
         {
-            timeSinceLastInput += Time.deltaTime; // Track how long it's been
+            timeSinceLastInput += Time.deltaTime;
         }
         HandleInput();
     }
@@ -54,29 +52,53 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         bool wasGrounded = isGrounded;
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-            if(isGrounded && !wasGrounded)
+        // Detectam collider-ul de sub noi
+        Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = hit != null;
+
+        // Verificam daca solul pe care stam este gheata
+        if (isGrounded && hit.sharedMaterial != null)
+        {
+            isOnIce = (hit.sharedMaterial.name == iceMaterialName);
+        }
+        else
+        {
+            isOnIce = false;
+        }
+
+        if (isGrounded && !wasGrounded)
+        {
+            hasMovedInAir = false;
+            // Daca nu e gheata, oprim player-ul cand aterizeaza
+            if (!isOnIce)
             {
-                hasMovedInAir = false;
                 body.linearVelocity = Vector2.zero;
             }
+        }
     }
 
     void HandleInput()
     {
         if (isGrounded)
         {
-            if (Input.GetKey(KeyCode.Space))
+            // MODIFICARE: Poate incarca saritura DOAR daca NU este pe gheata
+            if (Input.GetKey(KeyCode.Space) && !isOnIce)
             {
                 isCharging = true;
                 chargeTimer += Time.deltaTime;
                 body.linearVelocity = Vector2.zero;
-                //Debug.Log("Charging: " + chargeTimer);
             }
             else if (Input.GetKeyUp(KeyCode.Space))
             {
-                Launch();
+                // Daca a apucat sa incarce inainte sa intre pe gheata, il lasam sa lanseze
+                if (isCharging) Launch();
+            }
+
+            // Daca e pe gheata si incearca sa apese Space, dam un feedback (optional)
+            if (Input.GetKeyDown(KeyCode.Space) && isOnIce)
+            {
+                Debug.Log("Nu poti sari de pe gheata!");
             }
         }
         else
@@ -84,14 +106,14 @@ public class PlayerMovement : MonoBehaviour
             isCharging = false;
             chargeTimer = 0;
 
-            if(!hasMovedInAir)
+            if (!hasMovedInAir)
             {
-                if(Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     DoubleJump();
                     hasMovedInAir = true;
                 }
-                else if(Input.GetKeyDown(KeyCode.LeftShift))
+                else if (Input.GetKeyDown(KeyCode.LeftShift))
                 {
                     StartCoroutine(Dash());
                     hasMovedInAir = true;
@@ -106,12 +128,10 @@ public class PlayerMovement : MonoBehaviour
 
         float chargePercent = Mathf.Clamp01(chargeTimer / maxChargeTime);
         float launchForce = Mathf.Lerp(minJumpForce, maxJumpForce, chargePercent);
-        //Debug.Log("Launch Force: " + launchForce);
-        Vector2 launchVec;
 
+        Vector2 launchVec;
         float horizontalDir = 0;
 
-       
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             horizontalDir = Input.GetAxisRaw("Horizontal");
@@ -138,10 +158,8 @@ public class PlayerMovement : MonoBehaviour
 
     void DoubleJump()
     {
-        body.linearVelocity = new Vector2(body.linearVelocityX, 0);
+        body.linearVelocity = new Vector2(body.linearVelocity.x, 0);
         body.AddForce(Vector2.up * doubleJumpForce, ForceMode2D.Impulse);
-
-        Debug.Log("Double Jump");
     }
 
     System.Collections.IEnumerator Dash()
@@ -168,8 +186,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (groundCheck != null)
         {
-            // If grounded, draw Green. If air, draw Red.
-            Gizmos.color = isGrounded ? Color.green : Color.red;
+            Gizmos.color = isGrounded ? (isOnIce ? Color.cyan : Color.green) : Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
