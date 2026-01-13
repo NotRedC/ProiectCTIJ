@@ -78,29 +78,12 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         bool wasGrounded = isGrounded;
-
-        // Detectam collider-ul de sub noi
-        Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        isGrounded = hit != null;
-
-        // Verificam daca solul pe care stam este gheata
-        if (isGrounded && hit.sharedMaterial != null)
-        {
-            isOnIce = (hit.sharedMaterial.name == iceMaterialName);
-        }
-        else
-        {
-            isOnIce = false;
-        }
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         if (isGrounded && !wasGrounded)
         {
             hasMovedInAir = false;
-            // Daca nu e gheata, oprim player-ul cand aterizeaza
-            if (!isOnIce)
-            {
-                body.linearVelocity = Vector2.zero;
-            }
+            body.linearVelocity = Vector2.zero;
         }
     }
 
@@ -108,27 +91,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded)
         {
-            // MODIFICARE: Poate incarca saritura DOAR daca NU este pe gheata
-            if (Input.GetKey(KeyCode.Space) && !isOnIce)
+            if (Input.GetKey(KeyCode.Space))
             {
                 isCharging = true;
                 chargeTimer += Time.deltaTime;
                 body.linearVelocity = Vector2.zero;
+                //Debug.Log("Charging: " + chargeTimer);
             }
             else if (Input.GetKeyUp(KeyCode.Space))
             {
-                // Daca a apucat sa incarce inainte sa intre pe gheata, il lasam sa lanseze
-                if (isCharging) Launch();
-            }
-
-            // Daca e pe gheata si incearca sa apese Space, dam un feedback (optional)
-            if (Input.GetKeyDown(KeyCode.Space) && isOnIce)
-            {
-                Debug.Log("Nu poti sari de pe gheata!");
-            }
-            else
-            {
-                isCharging = false; // Reset daca nu apasa
+                Launch();
             }
         }
         else
@@ -170,11 +142,16 @@ public class PlayerMovement : MonoBehaviour
             horizontalDir = lastNonZeroDir;
         }
 
-        Vector2 launchVec = (horizontalDir != 0)
-            ? new Vector2(horizontalDir * (launchForce * 0.6f), launchForce)
-            : new Vector2(0, launchForce);
+        if (horizontalDir != 0)
+        {
+            launchVec = new Vector2(horizontalDir * (launchForce * 0.6f), launchForce);
+        }
+        else
+        {
+            launchVec = new Vector2(0, launchForce);
+        }
 
-        
+
         body.AddForce(launchVec, ForceMode2D.Impulse);
         chargeTimer = 0f;
 
