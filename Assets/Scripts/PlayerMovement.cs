@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     public string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
 
     private Rigidbody2D body;
+    private Animator anim; // REFERINTA NOUA
+    private SpriteRenderer sprite; // PENTRU FLIP
+
     private bool isGrounded;
     private bool isOnIce; // variabila noua
     private bool isCharging;
@@ -29,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>(); // INITIALIZARE
+        sprite = GetComponent<SpriteRenderer>(); // INITIALIZARE
     }
 
     void Update()
@@ -36,6 +41,10 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing) return;
         CheckGround();
         float currentInput = Input.GetAxisRaw("Horizontal");
+
+        // GESTIONARE FLIP (STANGA/DREAPTA)
+        if (currentInput > 0) sprite.flipX = true;
+        else if (currentInput < 0) sprite.flipX = false;
 
         if (currentInput != 0)
         {
@@ -46,7 +55,24 @@ public class PlayerMovement : MonoBehaviour
         {
             timeSinceLastInput += Time.deltaTime;
         }
+
         HandleInput();
+        UpdateAnimations(currentInput); // FUNCTIE NOUA
+    }
+
+    void UpdateAnimations(float input)
+    {
+        if (anim == null) return;
+
+        // Trimitem datele catre Animator
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isCharging", isCharging);
+
+        // Viteza orizontala pentru animatia de Walk
+        anim.SetFloat("Speed", Mathf.Abs(input));
+
+        // Viteza pe verticala (pentru a sti daca urcam sau cadem)
+        anim.SetFloat("yVelocity", body.linearVelocity.y);
     }
 
     void CheckGround()
@@ -100,6 +126,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 Debug.Log("Nu poti sari de pe gheata!");
             }
+            else
+            {
+                isCharging = false; // Reset daca nu apasa
+            }
         }
         else
         {
@@ -125,7 +155,6 @@ public class PlayerMovement : MonoBehaviour
     void Launch()
     {
         isCharging = false;
-
         float chargePercent = Mathf.Clamp01(chargeTimer / maxChargeTime);
         float launchForce = Mathf.Lerp(minJumpForce, maxJumpForce, chargePercent);
 
@@ -141,19 +170,15 @@ public class PlayerMovement : MonoBehaviour
             horizontalDir = lastNonZeroDir;
         }
 
-        if (horizontalDir != 0)
-        {
-            launchVec = new Vector2(horizontalDir * (launchForce * 0.6f), launchForce);
-        }
-        else
-        {
-            launchVec = new Vector2(0, launchForce);
-        }
+        Vector2 launchVec = (horizontalDir != 0)
+            ? new Vector2(horizontalDir * (launchForce * 0.6f), launchForce)
+            : new Vector2(0, launchForce);
 
         
         body.AddForce(launchVec, ForceMode2D.Impulse);
-
         chargeTimer = 0f;
+
+        if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
     }
 
     void DoubleJump()
