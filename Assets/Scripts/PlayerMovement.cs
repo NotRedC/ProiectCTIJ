@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
-    public string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
+    public string iceMaterialName = "IceMaterial"; // Numele materialului pentru gheata
 
     private Rigidbody2D body;
     private Animator anim; // REFERINTA NOUA
@@ -75,15 +75,29 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("yVelocity", body.linearVelocity.y);
     }
 
+    //void CheckGround()
+    //{
+    //    
+    //    bool wasGrounded = isGrounded;
+    //    isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+    //    if (isGrounded && !wasGrounded)
+    //    {
+    //        hasMovedInAir = false;
+    //        body.linearVelocity = Vector2.zero;
+    //    }
+    //}
     void CheckGround()
     {
+
+        Vector2 boxSize = new Vector2(0.11f, 0.08f);
         bool wasGrounded = isGrounded;
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, boxSize, 0f, groundLayer);
 
         if (isGrounded && !wasGrounded)
         {
             hasMovedInAir = false;
-            body.linearVelocity = Vector2.zero;
+           body.linearVelocity = Vector2.zero;
         }
     }
 
@@ -184,12 +198,21 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnDrawGizmos()
+    //void OnDrawGizmos()
+    //{
+    //    if (groundCheck != null)
+    //    {
+    //        Gizmos.color = isGrounded ? (isOnIce ? Color.cyan : Color.green) : Color.red;
+    //        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    //    }
+    //}
+    private void OnDrawGizmos()
     {
         if (groundCheck != null)
         {
-            Gizmos.color = isGrounded ? (isOnIce ? Color.cyan : Color.green) : Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.color = Color.cyan;
+            // Trebuie să folosești aceeași dimensiune ca în CheckGround
+            Gizmos.DrawWireCube(groundCheck.position, new Vector2(0.11f, 0.08f));
         }
     }
 }
