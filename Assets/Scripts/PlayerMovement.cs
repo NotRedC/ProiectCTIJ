@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashDuration;
 
     public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
+    public Vector2 groundCheckSize = new Vector2(0.8f, 0.1f);
     public LayerMask groundLayer;
     public string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
 
@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         bool wasGrounded = isGrounded;
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
 
         if (isGrounded && !wasGrounded)
         {
@@ -189,7 +189,7 @@ public class PlayerMovement : MonoBehaviour
         if (groundCheck != null)
         {
             Gizmos.color = isGrounded ? (isOnIce ? Color.cyan : Color.green) : Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
         }
     }
 }
