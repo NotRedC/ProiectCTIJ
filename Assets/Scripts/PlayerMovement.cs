@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite; // PENTRU FLIP
 
     private bool isGrounded;
-    private bool isOnIce; // variabila noua
+    private bool isOnIce = false; // variabila noua
     private bool isCharging;
     private bool isDashing;
     private bool hasMovedInAir;
@@ -80,7 +80,18 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         bool wasGrounded = isGrounded;
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
+        Collider2D hit = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
+
+        isGrounded = hit != null;
+
+        if(isGrounded)
+        {
+            isOnIce = hit.CompareTag("Ice");
+        }
+        else
+        {
+            isOnIce = false;
+        }
 
         if (isGrounded && !wasGrounded)
         {
@@ -99,16 +110,22 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (!isOnIce)
             {
-                isCharging = true;
-                chargeTimer += Time.deltaTime;
-                body.linearVelocity = Vector2.zero;
-                //Debug.Log("Charging: " + chargeTimer);
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    isCharging = true;
+                    chargeTimer += Time.deltaTime;
+                    body.linearVelocity = Vector2.zero;
+                    //Debug.Log("Charging: " + chargeTimer);
+                }
             }
-            else if (Input.GetKeyUp(KeyCode.Space))
+            else { }
+
+            if (!isOnIce && Input.GetKeyUp(KeyCode.Space) && isCharging)
             {
                 Launch();
+
             }
         }
         else
