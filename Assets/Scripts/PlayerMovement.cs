@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float doubleJumpForce;
     [SerializeField] private float dashForce;
     [SerializeField] private float dashDuration;
+    [SerializeField] private float jumpCooldown;
 
     public Transform groundCheck;
     public Vector2 groundCheckSize = new Vector2(0.8f, 0.1f);
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing;
     private bool hasMovedInAir;
     private float chargeTimer;
+    private bool isRecovering = false;
 
     private float lastNonZeroDir = 1;
     private float timeSinceLastInput;
@@ -84,11 +86,17 @@ public class PlayerMovement : MonoBehaviour
         {
             hasMovedInAir = false;
             body.linearVelocity = Vector2.zero;
+
+            StopCoroutine(RecoverFromJump());
+            StartCoroutine(RecoverFromJump());
+
         }
     }
 
     void HandleInput()
     {
+        if (isRecovering) return;
+
         if (isGrounded)
         {
             if (Input.GetKey(KeyCode.Space))
@@ -155,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
         body.AddForce(launchVec, ForceMode2D.Impulse);
         chargeTimer = 0f;
 
-        if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
+        //if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
     }
 
     void DoubleJump()
@@ -182,6 +190,13 @@ public class PlayerMovement : MonoBehaviour
         body.linearVelocity = Vector2.zero;
         isDashing = false;
 
+    }
+
+    System.Collections.IEnumerator RecoverFromJump()
+    {
+        isRecovering = true;
+        yield return new WaitForSeconds(jumpCooldown);
+        isRecovering = false;
     }
 
     void OnDrawGizmos()
