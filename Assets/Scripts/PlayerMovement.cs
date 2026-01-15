@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isOnIce = false; // variabila noua
     private bool isCharging;
     private bool isDashing;
+    private bool isControlsReversed = false;
     private bool hasMovedInAir;
     private float chargeTimer;
     private bool isRecovering = false;
@@ -42,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing) return;
         CheckGround();
-        float currentInput = Input.GetAxisRaw("Horizontal");
+        float currentInput = GetHorizontalInput();
 
         // GESTIONARE FLIP (STANGA/DREAPTA)
         if (currentInput > 0) sprite.flipX = true;
@@ -158,9 +159,9 @@ public class PlayerMovement : MonoBehaviour
         Vector2 launchVec;
         float horizontalDir = 0;
 
-        if (Input.GetAxisRaw("Horizontal") != 0)
+        if (GetHorizontalInput() != 0)
         {
-            horizontalDir = Input.GetAxisRaw("Horizontal");
+            horizontalDir = GetHorizontalInput();
         }
         else if (timeSinceLastInput < inputMemoryTime)
         {
@@ -196,7 +197,7 @@ public class PlayerMovement : MonoBehaviour
 
         float originalGravity = body.gravityScale;
         body.gravityScale = 0;
-        float dashDirection = Input.GetAxisRaw("Horizontal");
+        float dashDirection = GetHorizontalInput();
         if (dashDirection == 0)
         {
             dashDirection = lastNonZeroDir;
@@ -214,6 +215,23 @@ public class PlayerMovement : MonoBehaviour
         isRecovering = true;
         yield return new WaitForSeconds(jumpCooldown);
         isRecovering = false;
+    }
+
+    public float GetHorizontalInput()
+    {
+        float input = Input.GetAxisRaw("Horizontal");
+
+        if (isControlsReversed)
+        {
+            Debug.Log("Controls are reversed!");
+            return -input; // Flip it!
+        }
+        return input;
+    }
+
+    public void SetReversedControls(bool state)
+    {
+        isControlsReversed = state;
     }
 
     void OnDrawGizmos()
