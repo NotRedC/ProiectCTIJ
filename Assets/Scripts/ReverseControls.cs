@@ -6,7 +6,6 @@ public class ReverseControlZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Turn ON the curse
             other.GetComponent<PlayerMovement>().SetReversedControls(true);
         }
     }
@@ -15,7 +14,6 @@ public class ReverseControlZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Turn OFF the curse
             other.GetComponent<PlayerMovement>().SetReversedControls(false);
         }
     }
