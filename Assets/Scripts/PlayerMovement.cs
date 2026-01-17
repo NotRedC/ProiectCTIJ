@@ -8,9 +8,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float doubleJumpForce;
     [SerializeField] private float dashForce;
     [SerializeField] private float dashDuration;
+    [SerializeField] private float jumpCooldown;
 
     public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
+    public Vector2 groundCheckSize = new Vector2(0.8f, 0.1f);
     public LayerMask groundLayer;
     public string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
 
@@ -19,11 +20,13 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite; // PENTRU FLIP
 
     private bool isGrounded;
-    private bool isOnIce; // variabila noua
+    private bool isOnIce = false; // variabila noua
     private bool isCharging;
     private bool isDashing;
+    private bool isControlsReversed = false;
     private bool hasMovedInAir;
     private float chargeTimer;
+    private bool isRecovering = false;
 
     private float lastNonZeroDir = 1;
     private float timeSinceLastInput;
@@ -40,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing) return;
         CheckGround();
-        float currentInput = Input.GetAxisRaw("Horizontal");
+        float currentInput = GetHorizontalInput();
 
         // GESTIONARE FLIP (STANGA/DREAPTA)
         if (currentInput > 0) sprite.flipX = true;
@@ -78,15 +81,13 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         bool wasGrounded = isGrounded;
+        Collider2D hit = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
 
-        // Detectam collider-ul de sub noi
-        Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         isGrounded = hit != null;
 
-        // Verificam daca solul pe care stam este gheata
-        if (isGrounded && hit.sharedMaterial != null)
+        if(isGrounded)
         {
-            isOnIce = (hit.sharedMaterial.name == iceMaterialName);
+            isOnIce = hit.CompareTag("Ice");
         }
         else
         {
@@ -96,39 +97,36 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && !wasGrounded)
         {
             hasMovedInAir = false;
-            // Daca nu e gheata, oprim player-ul cand aterizeaza
-            if (!isOnIce)
-            {
-                body.linearVelocity = Vector2.zero;
-            }
+            body.linearVelocity = Vector2.zero;
+
+            StopCoroutine(RecoverFromJump());
+            StartCoroutine(RecoverFromJump());
+
         }
     }
 
     void HandleInput()
     {
+        if (isRecovering) return;
+
         if (isGrounded)
         {
-            // MODIFICARE: Poate incarca saritura DOAR daca NU este pe gheata
-            if (Input.GetKey(KeyCode.Space) && !isOnIce)
+            if (!isOnIce)
             {
-                isCharging = true;
-                chargeTimer += Time.deltaTime;
-                body.linearVelocity = Vector2.zero;
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    isCharging = true;
+                    chargeTimer += Time.deltaTime;
+                    body.linearVelocity = Vector2.zero;
+                    //Debug.Log("Charging: " + chargeTimer);
+                }
             }
-            else if (Input.GetKeyUp(KeyCode.Space))
-            {
-                // Daca a apucat sa incarce inainte sa intre pe gheata, il lasam sa lanseze
-                if (isCharging) Launch();
-            }
+            else { }
 
-            // Daca e pe gheata si incearca sa apese Space, dam un feedback (optional)
-            if (Input.GetKeyDown(KeyCode.Space) && isOnIce)
+            if (!isOnIce && Input.GetKeyUp(KeyCode.Space) && isCharging)
             {
-                Debug.Log("Nu poti sari de pe gheata!");
-            }
-            else
-            {
-                isCharging = false; // Reset daca nu apasa
+                Launch();
+
             }
         }
         else
@@ -161,24 +159,29 @@ public class PlayerMovement : MonoBehaviour
         Vector2 launchVec;
         float horizontalDir = 0;
 
-        if (Input.GetAxisRaw("Horizontal") != 0)
+        if (GetHorizontalInput() != 0)
         {
-            horizontalDir = Input.GetAxisRaw("Horizontal");
+            horizontalDir = GetHorizontalInput();
         }
         else if (timeSinceLastInput < inputMemoryTime)
         {
             horizontalDir = lastNonZeroDir;
         }
 
-        Vector2 launchVec = (horizontalDir != 0)
-            ? new Vector2(horizontalDir * (launchForce * 0.6f), launchForce)
-            : new Vector2(0, launchForce);
+        if (horizontalDir != 0)
+        {
+            launchVec = new Vector2(horizontalDir * (launchForce * 0.6f), launchForce);
+        }
+        else
+        {
+            launchVec = new Vector2(0, launchForce);
+        }
 
-        
+
         body.AddForce(launchVec, ForceMode2D.Impulse);
         chargeTimer = 0f;
 
-        if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
+        //if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
     }
 
     void DoubleJump()
@@ -194,7 +197,7 @@ public class PlayerMovement : MonoBehaviour
 
         float originalGravity = body.gravityScale;
         body.gravityScale = 0;
-        float dashDirection = Input.GetAxisRaw("Horizontal");
+        float dashDirection = GetHorizontalInput();
         if (dashDirection == 0)
         {
             dashDirection = lastNonZeroDir;
@@ -207,12 +210,36 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    System.Collections.IEnumerator RecoverFromJump()
+    {
+        isRecovering = true;
+        yield return new WaitForSeconds(jumpCooldown);
+        isRecovering = false;
+    }
+
+    public float GetHorizontalInput()
+    {
+        float input = Input.GetAxisRaw("Horizontal");
+
+        if (isControlsReversed)
+        {
+            Debug.Log("Controls are reversed!");
+            return -input; // Flip it!
+        }
+        return input;
+    }
+
+    public void SetReversedControls(bool state)
+    {
+        isControlsReversed = state;
+    }
+
     void OnDrawGizmos()
     {
         if (groundCheck != null)
         {
             Gizmos.color = isGrounded ? (isOnIce ? Color.cyan : Color.green) : Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
         }
     }
 }
