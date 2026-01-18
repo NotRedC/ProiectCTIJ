@@ -7,23 +7,23 @@ public class CameraController : MonoBehaviour
     public Transform player; // Drag your Player object here
 
     [Header("Zoom Settings")]
-    public float defaultSize; // Your normal game zoom
     public float zoomSpeed = 2f;   // How fast it zooms in/out
     private float targetSize;
     private Camera cam;
 
     [Header("Screen Settings")]
     // Adjust these to match your level design grid
-    public float screenWidth = 18f;
-    public float screenHeight = 10f;
-    public Vector2 offset = new Vector2(0, 0);
+    private float screenWidth = 16f;
+    private float screenHeight = 10f;
+    public Vector2 offset = new Vector2(0f, 5f);
+
+    private Vector2 gridOrigin = new Vector2(5f, 0.83f);
 
     void Start()
     {
         cam = GetComponent<Camera>();
         targetSize = cam.orthographicSize;
-        defaultSize = cam.orthographicSize;
-        //RecalculateGrid();
+       
     }
 
     public float smoothSpeed = 0f;
@@ -37,11 +37,16 @@ public class CameraController : MonoBehaviour
 
         }
 
-        float currentRoomX = Mathf.Round(player.position.x / screenWidth) * screenWidth;
-        float currentRoomY = Mathf.Round(player.position.y / screenHeight) * screenHeight;
+        float rawX = player.position.x;
+        float rawY = player.position.y;
 
-       
-        Vector3 targetPosition = new Vector3(currentRoomX + offset.x, currentRoomY + offset.y, transform.position.z);
+        float currentRoomX = Mathf.Round(rawX / screenWidth) * screenWidth;
+        float currentRoomY = Mathf.Floor(rawY / screenHeight) * screenHeight;
+
+        Debug.Log($"Player Pos: {player.position}, RawX: {rawX}, RawY: {rawY}, RoomX: {currentRoomX}, RoomY: {currentRoomY}");
+
+
+        Vector3 targetPosition = new Vector3(currentRoomX + gridOrigin.x + offset.x, currentRoomY + gridOrigin.y + offset.y, transform.position.z);
 
         if (smoothSpeed > 0)
         {
