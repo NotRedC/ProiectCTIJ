@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip dashSound;
+    [SerializeField] private AudioClip grassSound;
+    [SerializeField] private AudioClip snowSound;
+
     [SerializeField] private float minJumpForce;
     [SerializeField] private float maxJumpForce;
     [SerializeField] private float maxChargeTime;
@@ -10,14 +16,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashDuration;
     [SerializeField] private float jumpCooldown;
 
-    public Transform groundCheck;
-    public Vector2 groundCheckSize = new Vector2(0.8f, 0.1f);
-    public LayerMask groundLayer;
-    public string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private Vector2 groundCheckSize;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
 
     private Rigidbody2D body;
-    private Animator anim; // REFERINTA NOUA
-    private SpriteRenderer sprite; // PENTRU FLIP
+    private Animator anim;
+    private SpriteRenderer sprite;
 
     private bool isGrounded;
     private bool isOnIce = false; // variabila noua
@@ -27,10 +33,11 @@ public class PlayerMovement : MonoBehaviour
     private bool hasMovedInAir;
     private float chargeTimer;
     private bool isRecovering = false;
+    private string surfaceTag;
 
     private float lastNonZeroDir = 1;
     private float timeSinceLastInput;
-    public float inputMemoryTime = 0.1f;
+    private float inputMemoryTime = 0.1f;
 
     void Start()
     {
@@ -85,8 +92,9 @@ public class PlayerMovement : MonoBehaviour
 
         isGrounded = hit != null;
 
-        if(isGrounded)
+        if (isGrounded)
         {
+            surfaceTag = hit.tag;
             isOnIce = hit.CompareTag("Ice");
         }
         else
@@ -102,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
             StopCoroutine(RecoverFromJump());
             StartCoroutine(RecoverFromJump());
 
+            PlayLandingSound(surfaceTag);
         }
     }
 
@@ -153,6 +162,7 @@ public class PlayerMovement : MonoBehaviour
     void Launch()
     {
         isCharging = false;
+        audioSource.pitch = 1.0f;
         float chargePercent = Mathf.Clamp01(chargeTimer / maxChargeTime);
         float launchForce = Mathf.Lerp(minJumpForce, maxJumpForce, chargePercent);
 
@@ -179,6 +189,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         body.AddForce(launchVec, ForceMode2D.Impulse);
+        audioSource.PlayOneShot(jumpSound);
         chargeTimer = 0f;
 
         //if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
@@ -203,6 +214,7 @@ public class PlayerMovement : MonoBehaviour
             dashDirection = lastNonZeroDir;
         }
         body.linearVelocity = new Vector2(dashDirection * dashForce, 0);
+        audioSource.PlayOneShot(dashSound);
         yield return new WaitForSeconds(dashDuration);
         body.gravityScale = originalGravity;
         body.linearVelocity = Vector2.zero;
@@ -240,6 +252,22 @@ public class PlayerMovement : MonoBehaviour
         {
             Gizmos.color = isGrounded ? (isOnIce ? Color.cyan : Color.green) : Color.red;
             Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+        }
+    }
+
+    void PlayLandingSound(string tag)
+    {
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+
+        if (tag == "Snow" || tag == "Ice")
+        {
+
+            audioSource.PlayOneShot(snowSound);
+        }
+        else
+        {
+
+            audioSource.PlayOneShot(grassSound);
         }
     }
 }

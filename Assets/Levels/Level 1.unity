@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 2269383}
   m_Layer: 6
   m_Name: Platforma_9 (172)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 5000799}
   m_Layer: 6
   m_Name: Platforma_9 (247)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 38345635}
   m_Layer: 6
   m_Name: Platforma_9 (253)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 52199749}
   m_Layer: 6
   m_Name: Platforma_9 (216)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 114874626}
   m_Layer: 6
   m_Name: Platforma_9 (207)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1993,7 +1993,7 @@ GameObject:
   - component: {fileID: 140989315}
   m_Layer: 6
   m_Name: Platforma_9 (273)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2127,7 +2127,7 @@ GameObject:
   - component: {fileID: 159824857}
   m_Layer: 6
   m_Name: Platforma_9 (276)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2529,7 +2529,7 @@ GameObject:
   - component: {fileID: 175755997}
   m_Layer: 6
   m_Name: Platforma_9 (209)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3065,7 +3065,7 @@ GameObject:
   - component: {fileID: 212016030}
   m_Layer: 6
   m_Name: Platforma_9 (242)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3617,7 +3617,7 @@ GameObject:
   - component: {fileID: 218775722}
   m_Layer: 6
   m_Name: Platforma_9 (263)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4153,7 +4153,7 @@ GameObject:
   - component: {fileID: 253679195}
   m_Layer: 6
   m_Name: Platforma_9 (173)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4689,7 +4689,7 @@ GameObject:
   - component: {fileID: 259772370}
   m_Layer: 6
   m_Name: Platforma_9 (221)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4823,7 +4823,7 @@ GameObject:
   - component: {fileID: 260843493}
   m_Layer: 6
   m_Name: Platforma_9 (197)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4957,7 +4957,7 @@ GameObject:
   - component: {fileID: 265706545}
   m_Layer: 6
   m_Name: Platforma_9 (226)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5091,7 +5091,7 @@ GameObject:
   - component: {fileID: 266893739}
   m_Layer: 6
   m_Name: Platforma_9 (290)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5493,7 +5493,7 @@ GameObject:
   - component: {fileID: 269229963}
   m_Layer: 6
   m_Name: Platforma_9 (177)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5627,7 +5627,7 @@ GameObject:
   - component: {fileID: 287992054}
   m_Layer: 6
   m_Name: Platforma_9 (190)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5895,7 +5895,7 @@ GameObject:
   - component: {fileID: 296385625}
   m_Layer: 6
   m_Name: Platforma_9 (296)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6297,7 +6297,7 @@ GameObject:
   - component: {fileID: 313535407}
   m_Layer: 6
   m_Name: Platforma_9 (218)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6565,7 +6565,7 @@ GameObject:
   - component: {fileID: 321250735}
   m_Layer: 6
   m_Name: Platforma_9 (195)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6831,7 +6831,7 @@ GameObject:
   - component: {fileID: 330146059}
   - component: {fileID: 330146061}
   - component: {fileID: 330146060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (7)
   m_TagString: Ice
   m_Icon: {fileID: 0}
@@ -6967,7 +6967,7 @@ GameObject:
   - component: {fileID: 343737396}
   m_Layer: 6
   m_Name: Platforma_9 (231)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7724,7 +7724,7 @@ GameObject:
   - component: {fileID: 424328508}
   m_Layer: 6
   m_Name: Platforma_9 (230)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7858,7 +7858,7 @@ GameObject:
   - component: {fileID: 431259209}
   m_Layer: 6
   m_Name: Platforma_9 (212)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7992,7 +7992,7 @@ GameObject:
   - component: {fileID: 438387548}
   m_Layer: 6
   m_Name: Platforma_9 (295)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8126,7 +8126,7 @@ GameObject:
   - component: {fileID: 451959905}
   m_Layer: 6
   m_Name: Platforma_9 (297)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8528,7 +8528,7 @@ GameObject:
   - component: {fileID: 466419163}
   m_Layer: 6
   m_Name: Platforma_9 (260)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9064,7 +9064,7 @@ GameObject:
   - component: {fileID: 513228468}
   m_Layer: 6
   m_Name: Platforma_9 (187)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9576,7 +9576,7 @@ GameObject:
   - component: {fileID: 525470765}
   m_Layer: 6
   m_Name: Platforma_9 (176)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10112,7 +10112,7 @@ GameObject:
   - component: {fileID: 545830164}
   m_Layer: 6
   m_Name: Platforma_9 (277)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10246,7 +10246,7 @@ GameObject:
   - component: {fileID: 562565696}
   m_Layer: 6
   m_Name: Platforma_9 (236)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10380,7 +10380,7 @@ GameObject:
   - component: {fileID: 579979723}
   m_Layer: 6
   m_Name: Platforma_9 (188)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10648,7 +10648,7 @@ GameObject:
   - component: {fileID: 593742051}
   m_Layer: 6
   m_Name: Platforma_9 (286)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11050,7 +11050,7 @@ GameObject:
   - component: {fileID: 604976708}
   m_Layer: 6
   m_Name: Platforma_9 (266)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11184,7 +11184,7 @@ GameObject:
   - component: {fileID: 610165325}
   m_Layer: 6
   m_Name: Platforma_9 (168)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11318,7 +11318,7 @@ GameObject:
   - component: {fileID: 615059879}
   m_Layer: 6
   m_Name: Platforma_9 (267)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11586,7 +11586,7 @@ GameObject:
   - component: {fileID: 616462813}
   m_Layer: 6
   m_Name: Platforma_9 (213)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11804,7 +11804,7 @@ GameObject:
   - component: {fileID: 619485835}
   m_Layer: 6
   m_Name: Platforma_9 (220)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11938,7 +11938,7 @@ GameObject:
   - component: {fileID: 627584045}
   m_Layer: 6
   m_Name: Platforma_9 (196)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12206,7 +12206,7 @@ GameObject:
   - component: {fileID: 635666059}
   m_Layer: 6
   m_Name: Platforma_9 (166)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13144,7 +13144,7 @@ GameObject:
   - component: {fileID: 666416193}
   m_Layer: 6
   m_Name: Platforma_9 (294)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13278,7 +13278,7 @@ GameObject:
   - component: {fileID: 672518997}
   m_Layer: 6
   m_Name: Platforma_9 (178)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13412,7 +13412,7 @@ GameObject:
   - component: {fileID: 680308163}
   m_Layer: 6
   m_Name: Platforma_9 (271)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13546,7 +13546,7 @@ GameObject:
   - component: {fileID: 687854868}
   m_Layer: 6
   m_Name: Platforma_9 (181)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14618,7 +14618,7 @@ GameObject:
   - component: {fileID: 706897684}
   m_Layer: 6
   m_Name: Platforma_9 (201)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14750,7 +14750,7 @@ GameObject:
   - component: {fileID: 716064254}
   - component: {fileID: 716064256}
   - component: {fileID: 716064255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (6)
   m_TagString: Ice
   m_Icon: {fileID: 0}
@@ -15020,7 +15020,7 @@ GameObject:
   - component: {fileID: 728440731}
   m_Layer: 6
   m_Name: Platforma_9 (206)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15288,7 +15288,7 @@ GameObject:
   - component: {fileID: 735606735}
   m_Layer: 6
   m_Name: Platforma_9 (214)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15422,7 +15422,7 @@ GameObject:
   - component: {fileID: 746496717}
   m_Layer: 6
   m_Name: Platforma_9 (278)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16092,7 +16092,7 @@ GameObject:
   - component: {fileID: 805684119}
   m_Layer: 6
   m_Name: Platforma_9 (208)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16226,7 +16226,7 @@ GameObject:
   - component: {fileID: 823609300}
   m_Layer: 6
   m_Name: Platforma_9 (203)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16494,7 +16494,7 @@ GameObject:
   - component: {fileID: 837797949}
   m_Layer: 6
   m_Name: Platforma_9 (169)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16762,7 +16762,7 @@ GameObject:
   - component: {fileID: 846614599}
   m_Layer: 6
   m_Name: Platforma_9 (232)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17169,7 +17169,7 @@ GameObject:
   - component: {fileID: 894465908}
   m_Layer: 6
   m_Name: Platforma_9 (211)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17303,7 +17303,7 @@ GameObject:
   - component: {fileID: 901339013}
   m_Layer: 6
   m_Name: Platforma_9 (185)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17437,7 +17437,7 @@ GameObject:
   - component: {fileID: 905543160}
   m_Layer: 6
   m_Name: Platforma_9 (193)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17839,7 +17839,7 @@ GameObject:
   - component: {fileID: 907123958}
   m_Layer: 6
   m_Name: Platforma_9 (287)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18107,7 +18107,7 @@ GameObject:
   - component: {fileID: 917494997}
   m_Layer: 6
   m_Name: Platforma_9 (198)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18643,7 +18643,7 @@ GameObject:
   - component: {fileID: 951493016}
   m_Layer: 6
   m_Name: Platforma_9 (234)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18864,7 +18864,7 @@ GameObject:
   - component: {fileID: 953405384}
   m_Layer: 6
   m_Name: Platforma_9 (235)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19175,7 +19175,7 @@ GameObject:
   - component: {fileID: 965164104}
   m_Layer: 6
   m_Name: Platforma_9 (238)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19577,7 +19577,7 @@ GameObject:
   - component: {fileID: 977296616}
   m_Layer: 6
   m_Name: Platforma_9 (265)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20474,7 +20474,7 @@ GameObject:
   - component: {fileID: 1040270289}
   m_Layer: 6
   m_Name: Platforma_9 (183)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20608,7 +20608,7 @@ GameObject:
   - component: {fileID: 1054434180}
   m_Layer: 6
   m_Name: Platforma_9 (167)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20742,7 +20742,7 @@ GameObject:
   - component: {fileID: 1058624860}
   m_Layer: 6
   m_Name: Platforma_9 (228)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20876,7 +20876,7 @@ GameObject:
   - component: {fileID: 1064165004}
   m_Layer: 6
   m_Name: Platforma_9 (229)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21910,7 +21910,7 @@ GameObject:
   - component: {fileID: 1114833344}
   m_Layer: 6
   m_Name: Platforma_9 (202)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22178,7 +22178,7 @@ GameObject:
   - component: {fileID: 1118040646}
   m_Layer: 6
   m_Name: Platforma_9 (258)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22446,7 +22446,7 @@ GameObject:
   - component: {fileID: 1123937572}
   m_Layer: 6
   m_Name: Platforma_9 (288)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22714,7 +22714,7 @@ GameObject:
   - component: {fileID: 1127844385}
   m_Layer: 6
   m_Name: Platforma_9 (227)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23250,7 +23250,7 @@ GameObject:
   - component: {fileID: 1139045222}
   m_Layer: 6
   m_Name: Platforma_9 (217)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23518,7 +23518,7 @@ GameObject:
   - component: {fileID: 1146869964}
   m_Layer: 6
   m_Name: Platforma_9 (171)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23652,7 +23652,7 @@ GameObject:
   - component: {fileID: 1151136010}
   m_Layer: 6
   m_Name: Platforma_9 (259)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24543,7 +24543,7 @@ GameObject:
   - component: {fileID: 1202123897}
   m_Layer: 6
   m_Name: Platforma_9 (222)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24898,7 +24898,7 @@ GameObject:
   - component: {fileID: 1211790205}
   m_Layer: 6
   m_Name: Platforma_9 (170)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25568,7 +25568,7 @@ GameObject:
   - component: {fileID: 1242749416}
   m_Layer: 6
   m_Name: Platforma_9 (243)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25702,7 +25702,7 @@ GameObject:
   - component: {fileID: 1250715003}
   m_Layer: 6
   m_Name: Platforma_9 (280)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25955,7 +25955,7 @@ GameObject:
   - component: {fileID: 1256635618}
   m_Layer: 6
   m_Name: Platforma_9 (240)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26491,7 +26491,7 @@ GameObject:
   - component: {fileID: 1305062889}
   m_Layer: 6
   m_Name: Platforma_9 (270)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26759,7 +26759,7 @@ GameObject:
   - component: {fileID: 1324600234}
   m_Layer: 6
   m_Name: Platforma_9 (283)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26893,7 +26893,7 @@ GameObject:
   - component: {fileID: 1326382401}
   m_Layer: 6
   m_Name: Platforma_9 (182)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27295,7 +27295,7 @@ GameObject:
   - component: {fileID: 1337589016}
   m_Layer: 6
   m_Name: Platforma_9 (282)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27563,7 +27563,7 @@ GameObject:
   - component: {fileID: 1349180015}
   m_Layer: 6
   m_Name: Platforma_9 (262)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28099,7 +28099,7 @@ GameObject:
   - component: {fileID: 1360266776}
   m_Layer: 6
   m_Name: Platforma_9 (192)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28588,7 +28588,7 @@ GameObject:
   - component: {fileID: 1393467898}
   m_Layer: 6
   m_Name: Platforma_9 (233)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28722,7 +28722,7 @@ GameObject:
   - component: {fileID: 1416156971}
   m_Layer: 6
   m_Name: Platforma_9 (241)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29392,7 +29392,7 @@ GameObject:
   - component: {fileID: 1459985091}
   m_Layer: 6
   m_Name: Platforma_9 (180)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29928,7 +29928,7 @@ GameObject:
   - component: {fileID: 1494747988}
   m_Layer: 6
   m_Name: Platforma_9 (239)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30598,7 +30598,7 @@ GameObject:
   - component: {fileID: 1537534560}
   m_Layer: 6
   m_Name: Platforma_9 (194)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31562,7 +31562,7 @@ GameObject:
   - component: {fileID: 1566447628}
   m_Layer: 6
   m_Name: Platforma_9 (210)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31830,7 +31830,7 @@ GameObject:
   - component: {fileID: 1570809473}
   m_Layer: 6
   m_Name: Platforma_9 (248)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32098,7 +32098,7 @@ GameObject:
   - component: {fileID: 1579047635}
   m_Layer: 6
   m_Name: Platforma_9 (215)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32232,7 +32232,7 @@ GameObject:
   - component: {fileID: 1584837806}
   m_Layer: 6
   m_Name: Platforma_9 (237)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32500,7 +32500,7 @@ GameObject:
   - component: {fileID: 1592154636}
   m_Layer: 6
   m_Name: Platforma_9 (274)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32847,7 +32847,7 @@ GameObject:
   - component: {fileID: 1610516560}
   m_Layer: 6
   m_Name: Platforma_9 (224)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33247,9 +33247,9 @@ GameObject:
   - component: {fileID: 1629616374}
   - component: {fileID: 1629616376}
   - component: {fileID: 1629616375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33383,7 +33383,7 @@ GameObject:
   - component: {fileID: 1640120590}
   m_Layer: 6
   m_Name: Platforma_9 (264)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33651,7 +33651,7 @@ GameObject:
   - component: {fileID: 1657110224}
   m_Layer: 6
   m_Name: Platforma_9 (219)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33919,7 +33919,7 @@ GameObject:
   - component: {fileID: 1665842720}
   m_Layer: 6
   m_Name: Platforma_9 (284)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34053,7 +34053,7 @@ GameObject:
   - component: {fileID: 1697791069}
   m_Layer: 6
   m_Name: Platforma_9 (293)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34723,7 +34723,7 @@ GameObject:
   - component: {fileID: 1730788591}
   m_Layer: 6
   m_Name: Platforma_9 (200)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34857,7 +34857,7 @@ GameObject:
   - component: {fileID: 1749756100}
   m_Layer: 6
   m_Name: Platforma_9 (184)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34991,7 +34991,7 @@ GameObject:
   - component: {fileID: 1760889836}
   m_Layer: 6
   m_Name: Platforma_9 (261)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35125,7 +35125,7 @@ GameObject:
   - component: {fileID: 1762020323}
   m_Layer: 6
   m_Name: Platforma_9 (268)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35795,7 +35795,7 @@ GameObject:
   - component: {fileID: 1809168199}
   m_Layer: 6
   m_Name: Platforma_9 (223)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36063,7 +36063,7 @@ GameObject:
   - component: {fileID: 1821068815}
   m_Layer: 6
   m_Name: Platforma_9 (199)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36326,21 +36326,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1029778489949065924, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3317099542557292008, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3317099542557292008, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3317099542557292008, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.22
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3317099542557292008, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 153.4
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 3317099542557292008, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -36399,6 +36403,26 @@ PrefabInstance:
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+      propertyPath: dashSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d2e689cd9f088d40a2d80fe22b2e17f, type: 3}
+    - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 801c4b8f0a23cc943ad669fba571d6ab, type: 3}
+    - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+      propertyPath: snowSound
+      value: 
+      objectReference: {fileID: 8300000, guid: fb5f680ec83f8b842a939e701c21d501, type: 3}
+    - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+      propertyPath: grassSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f5445277dd9e1c4992b546f1846a710, type: 3}
+    - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1955435423}
+    - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: dashDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -36416,11 +36440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: groundCheckSize.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5953039959273521158, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: groundCheckSize.y
-      value: 0.75
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 7183473717679631853, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       propertyPath: m_Sprite
@@ -36436,12 +36460,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3523664222093058481, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+    - {fileID: 1029778489949065924, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8057034432785857694, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1955435417}
+    - targetCorrespondingSourceObject: {fileID: 8057034432785857694, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1955435423}
   m_SourcePrefab: {fileID: 100100000, guid: f4f937e187cdebf46af4e2203a69da4a, type: 3}
 --- !u!1 &1829974392
 GameObject:
@@ -36456,7 +36484,7 @@ GameObject:
   - component: {fileID: 1829974394}
   m_Layer: 6
   m_Name: Platforma_9 (291)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36590,7 +36618,7 @@ GameObject:
   - component: {fileID: 1830852886}
   m_Layer: 6
   m_Name: Platforma_9 (191)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37126,7 +37154,7 @@ GameObject:
   - component: {fileID: 1868194333}
   m_Layer: 6
   m_Name: Platforma_9 (179)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37387,7 +37415,7 @@ GameObject:
   - component: {fileID: 1874915111}
   m_Layer: 6
   m_Name: Platforma_9 (205)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37521,7 +37549,7 @@ GameObject:
   - component: {fileID: 1875030508}
   m_Layer: 6
   m_Name: Platforma_9 (189)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37789,7 +37817,7 @@ GameObject:
   - component: {fileID: 1898839948}
   m_Layer: 6
   m_Name: Platforma_9 (269)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37923,7 +37951,7 @@ GameObject:
   - component: {fileID: 1899831769}
   m_Layer: 6
   m_Name: Platforma_9 (272)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38057,7 +38085,7 @@ GameObject:
   - component: {fileID: 1900511269}
   m_Layer: 6
   m_Name: Platforma_9 (204)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38459,7 +38487,7 @@ GameObject:
   - component: {fileID: 1934562272}
   m_Layer: 6
   m_Name: Platforma_9 (275)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38724,6 +38752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942158441}
   - component: {fileID: 1942158442}
+  - component: {fileID: 1942158443}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Untagged
@@ -38801,6 +38830,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1942158443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942158440}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1950292158
 GameObject:
   m_ObjectHideFlags: 0
@@ -38814,7 +38889,7 @@ GameObject:
   - component: {fileID: 1950292160}
   m_Layer: 6
   m_Name: Platforma_9 (281)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38974,9 +39049,106 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.000000014901161, y: 0.008792043}
-  m_Size: {x: 0.41227892, y: 0.4470322}
+  m_Offset: {x: 0.00000015894572, y: 0.01008606}
+  m_Size: {x: 0.36284035, y: 0.43207806}
   m_Direction: 0
+--- !u!82 &1955435423
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884579792}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1955677077
 GameObject:
   m_ObjectHideFlags: 0
@@ -39747,7 +39919,7 @@ GameObject:
   - component: {fileID: 2006383695}
   m_Layer: 6
   m_Name: Platforma_9 (186)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40236,7 +40408,7 @@ GameObject:
   - component: {fileID: 2031592800}
   m_Layer: 6
   m_Name: Platforma_9 (175)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40638,7 +40810,7 @@ GameObject:
   - component: {fileID: 2054725296}
   m_Layer: 6
   m_Name: Platforma_9 (285)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40906,7 +41078,7 @@ GameObject:
   - component: {fileID: 2068597997}
   m_Layer: 6
   m_Name: Platforma_9 (289)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41308,7 +41480,7 @@ GameObject:
   - component: {fileID: 2087095927}
   m_Layer: 6
   m_Name: Platforma_9 (225)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41442,7 +41614,7 @@ GameObject:
   - component: {fileID: 2088798330}
   m_Layer: 6
   m_Name: Platforma_9 (279)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41978,7 +42150,7 @@ GameObject:
   - component: {fileID: 2109249032}
   m_Layer: 6
   m_Name: Platforma_9 (292)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42112,7 +42284,7 @@ GameObject:
   - component: {fileID: 2115443718}
   m_Layer: 6
   m_Name: Platforma_9 (252)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42377,6 +42549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2123998331}
   - component: {fileID: 2123998332}
+  - component: {fileID: 2123998333}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Untagged
@@ -42454,6 +42627,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2123998333
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123998330}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2132704868
 GameObject:
   m_ObjectHideFlags: 0
@@ -42467,7 +42686,7 @@ GameObject:
   - component: {fileID: 2132704870}
   m_Layer: 6
   m_Name: Platforma_9 (174)
-  m_TagString: Untagged
+  m_TagString: Snow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
