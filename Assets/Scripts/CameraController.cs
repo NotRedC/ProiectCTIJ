@@ -43,9 +43,6 @@ public class CameraController : MonoBehaviour
         float currentRoomX = Mathf.Round(rawX / screenWidth) * screenWidth;
         float currentRoomY = Mathf.Floor(rawY / screenHeight) * screenHeight;
 
-        Debug.Log($"Player Pos: {player.position}, RawX: {rawX}, RawY: {rawY}, RoomX: {currentRoomX}, RoomY: {currentRoomY}");
-
-
         Vector3 targetPosition = new Vector3(currentRoomX + gridOrigin.x + offset.x, currentRoomY + gridOrigin.y + offset.y, transform.position.z);
 
         if (smoothSpeed > 0)

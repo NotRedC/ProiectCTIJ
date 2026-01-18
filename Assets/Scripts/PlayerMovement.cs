@@ -192,13 +192,14 @@ public class PlayerMovement : MonoBehaviour
         audioSource.PlayOneShot(jumpSound);
         chargeTimer = 0f;
 
-        //if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
+      
     }
 
     void DoubleJump()
     {
         body.linearVelocity = new Vector2(body.linearVelocity.x, 0);
         body.AddForce(Vector2.up * doubleJumpForce, ForceMode2D.Impulse);
+        audioSource.PlayOneShot(jumpSound);
     }
 
     System.Collections.IEnumerator Dash()
