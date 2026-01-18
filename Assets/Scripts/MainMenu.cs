@@ -7,12 +7,13 @@ public class MainMenu : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("SavedScene"))
         {
+            Debug.Log("Înc?rcare joc salvat în scena: " + PlayerPrefs.GetString("SavedScene"));
             string sceneToLoad = PlayerPrefs.GetString("SavedScene");
             SceneManager.LoadScene(sceneToLoad);
         }
         else
         {
-            SceneManager.LoadScene("Level_1");
+            SceneManager.LoadScene("Level 1");
         }
     }
 
@@ -20,5 +21,11 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Jocul s-a închis!");
         Application.Quit(); // inchide jocul
+    }
+
+    public void OpenSettings()
+    {
+        Debug.Log("Deschidere meniul de set?ri");
+        SceneManager.LoadScene("SettingsMenu");
     }
 }
