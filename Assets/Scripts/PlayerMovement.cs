@@ -2,47 +2,57 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip dashSound;
+    [SerializeField] private AudioClip grassSound;
+    [SerializeField] private AudioClip snowSound;
+
     [SerializeField] private float minJumpForce;
     [SerializeField] private float maxJumpForce;
     [SerializeField] private float maxChargeTime;
     [SerializeField] private float doubleJumpForce;
     [SerializeField] private float dashForce;
     [SerializeField] private float dashDuration;
+    [SerializeField] private float jumpCooldown;
 
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
-    public LayerMask groundLayer;
-    public string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private Vector2 groundCheckSize;
+    [SerializeField] private LayerMask groundLayer;
 
     private Rigidbody2D body;
-    private Animator anim; // REFERINTA NOUA
-    private SpriteRenderer sprite; // PENTRU FLIP
+    private Animator anim;
+    private SpriteRenderer sprite;
 
     private bool isGrounded;
-    private bool isOnIce; // variabila noua
+    private bool isOnIce = false; // variabila noua
     private bool isCharging;
     private bool isDashing;
+    private bool isControlsReversed = false;
     private bool hasMovedInAir;
     private float chargeTimer;
+    private bool isRecovering = false;
+    private string surfaceTag;
 
     private float lastNonZeroDir = 1;
     private float timeSinceLastInput;
-    public float inputMemoryTime = 0.1f;
+    private float inputMemoryTime = 0.1f;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>(); // INITIALIZARE
-        sprite = GetComponent<SpriteRenderer>(); // INITIALIZARE
+        anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>(); 
+
+        bool sfxOn = PlayerPrefs.GetInt("SFX", 1) == 1;
+        audioSource.mute = !sfxOn;
     }
 
     void Update()
     {
         if (isDashing) return;
         CheckGround();
-        float currentInput = Input.GetAxisRaw("Horizontal");
-
-        // GESTIONARE FLIP (STANGA/DREAPTA)
+        float currentInput = GetHorizontalInput();
         if (currentInput > 0) sprite.flipX = true;
         else if (currentInput < 0) sprite.flipX = false;
 
@@ -57,50 +67,71 @@ public class PlayerMovement : MonoBehaviour
         }
 
         HandleInput();
-        UpdateAnimations(currentInput); // FUNCTIE NOUA
+        UpdateAnimations(currentInput);
     }
 
     void UpdateAnimations(float input)
     {
         if (anim == null) return;
 
-        // Trimitem datele catre Animator
+    
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isCharging", isCharging);
-
-        // Viteza orizontala pentru animatia de Walk
         anim.SetFloat("Speed", Mathf.Abs(input));
-
-        // Viteza pe verticala (pentru a sti daca urcam sau cadem)
         anim.SetFloat("yVelocity", body.linearVelocity.y);
     }
 
     void CheckGround()
     {
         bool wasGrounded = isGrounded;
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        Collider2D hit = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
+
+        isGrounded = hit != null;
+
+        if (isGrounded)
+        {
+            surfaceTag = hit.tag;
+            isOnIce = hit.CompareTag("Ice");
+        }
+        else
+        {
+            isOnIce = false;
+        }
 
         if (isGrounded && !wasGrounded)
         {
             hasMovedInAir = false;
             body.linearVelocity = Vector2.zero;
+
+            StopCoroutine(RecoverFromJump());
+            StartCoroutine(RecoverFromJump());
+
+            PlayLandingSound(surfaceTag);
         }
     }
 
     void HandleInput()
     {
+        if (isRecovering) return;
+
         if (isGrounded)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (!isOnIce)
             {
-                isCharging = true;
-                chargeTimer += Time.deltaTime;
-                body.linearVelocity = Vector2.zero;
-                //Debug.Log("Charging: " + chargeTimer);
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    isCharging = true;
+                    chargeTimer += Time.deltaTime;
+                    body.linearVelocity = Vector2.zero;
+                 
+                }
             }
-            else if (Input.GetKeyUp(KeyCode.Space))
+            else { }
+
+            if (!isOnIce && Input.GetKeyUp(KeyCode.Space) && isCharging)
             {
                 Launch();
+
             }
         }
         else
@@ -127,15 +158,16 @@ public class PlayerMovement : MonoBehaviour
     void Launch()
     {
         isCharging = false;
+        audioSource.pitch = 1.0f;
         float chargePercent = Mathf.Clamp01(chargeTimer / maxChargeTime);
         float launchForce = Mathf.Lerp(minJumpForce, maxJumpForce, chargePercent);
 
         Vector2 launchVec;
         float horizontalDir = 0;
 
-        if (Input.GetAxisRaw("Horizontal") != 0)
+        if (GetHorizontalInput() != 0)
         {
-            horizontalDir = Input.GetAxisRaw("Horizontal");
+            horizontalDir = GetHorizontalInput();
         }
         else if (timeSinceLastInput < inputMemoryTime)
         {
@@ -153,15 +185,17 @@ public class PlayerMovement : MonoBehaviour
 
 
         body.AddForce(launchVec, ForceMode2D.Impulse);
+        audioSource.PlayOneShot(jumpSound);
         chargeTimer = 0f;
 
-        if (anim != null) anim.SetTrigger("takeOff"); // Trigger optional pentru salt
+      
     }
 
     void DoubleJump()
     {
         body.linearVelocity = new Vector2(body.linearVelocity.x, 0);
         body.AddForce(Vector2.up * doubleJumpForce, ForceMode2D.Impulse);
+        audioSource.PlayOneShot(jumpSound);
     }
 
     System.Collections.IEnumerator Dash()
@@ -171,12 +205,13 @@ public class PlayerMovement : MonoBehaviour
 
         float originalGravity = body.gravityScale;
         body.gravityScale = 0;
-        float dashDirection = Input.GetAxisRaw("Horizontal");
+        float dashDirection = GetHorizontalInput();
         if (dashDirection == 0)
         {
             dashDirection = lastNonZeroDir;
         }
         body.linearVelocity = new Vector2(dashDirection * dashForce, 0);
+        audioSource.PlayOneShot(dashSound);
         yield return new WaitForSeconds(dashDuration);
         body.gravityScale = originalGravity;
         body.linearVelocity = Vector2.zero;
@@ -184,12 +219,52 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    System.Collections.IEnumerator RecoverFromJump()
+    {
+        isRecovering = true;
+        yield return new WaitForSeconds(jumpCooldown);
+        isRecovering = false;
+    }
+
+    public float GetHorizontalInput()
+    {
+        float input = Input.GetAxisRaw("Horizontal");
+
+        if (isControlsReversed)
+        {
+            Debug.Log("Controls are reversed!");
+            return -input;
+        }
+        return input;
+    }
+
+    public void SetReversedControls(bool state)
+    {
+        isControlsReversed = state;
+    }
+
     void OnDrawGizmos()
     {
         if (groundCheck != null)
         {
             Gizmos.color = isGrounded ? (isOnIce ? Color.cyan : Color.green) : Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+            Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+        }
+    }
+
+    void PlayLandingSound(string tag)
+    {
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+
+        if (tag == "Snow" || tag == "Ice")
+        {
+
+            audioSource.PlayOneShot(snowSound);
+        }
+        else
+        {
+
+            audioSource.PlayOneShot(grassSound);
         }
     }
 }

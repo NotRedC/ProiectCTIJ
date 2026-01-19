@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Ice
+  - Snow
   layers:
   - Default
   - TransparentFX
@@ -38,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 502897359
+    locked: 0
+  - name: Background 1
+    uniqueID: 2755139023
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
