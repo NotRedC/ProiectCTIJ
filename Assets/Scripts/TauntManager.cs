@@ -63,7 +63,7 @@ public class TauntManager : MonoBehaviour
     {
         while (canvasGroup.alpha > 0)
         {
-            canvasGroup.alpha -= Time.deltaTime * fadeSpeed * 2; // Fade out fast
+            canvasGroup.alpha -= Time.deltaTime * fadeSpeed * 2;
             yield return null;
         }
     }

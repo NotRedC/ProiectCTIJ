@@ -3,8 +3,8 @@ using UnityEngine;
 public class CameraZoomTrigger : MonoBehaviour
 {
     [Header("Zoom Settings")]
-    public float zoomAmount; // Bigger number = Zoom OUT
-    public float originalSize; // Return to this when leaving
+    public float zoomAmount;
+    public float originalSize;
 
     void OnTriggerEnter2D(Collider2D other)
     {

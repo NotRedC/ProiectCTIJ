@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector2 groundCheckSize;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private string iceMaterialName = "IceMaterial"; // Numele materialului creat de tine
 
     private Rigidbody2D body;
     private Animator anim;
@@ -42,8 +41,11 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>(); // INITIALIZARE
-        sprite = GetComponent<SpriteRenderer>(); // INITIALIZARE
+        anim = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>(); 
+
+        bool sfxOn = PlayerPrefs.GetInt("SFX", 1) == 1;
+        audioSource.mute = !sfxOn;
     }
 
     void Update()
@@ -51,8 +53,6 @@ public class PlayerMovement : MonoBehaviour
         if (isDashing) return;
         CheckGround();
         float currentInput = GetHorizontalInput();
-
-        // GESTIONARE FLIP (STANGA/DREAPTA)
         if (currentInput > 0) sprite.flipX = true;
         else if (currentInput < 0) sprite.flipX = false;
 
@@ -67,21 +67,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         HandleInput();
-        UpdateAnimations(currentInput); // FUNCTIE NOUA
+        UpdateAnimations(currentInput);
     }
 
     void UpdateAnimations(float input)
     {
         if (anim == null) return;
 
-        // Trimitem datele catre Animator
+    
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isCharging", isCharging);
-
-        // Viteza orizontala pentru animatia de Walk
         anim.SetFloat("Speed", Mathf.Abs(input));
-
-        // Viteza pe verticala (pentru a sti daca urcam sau cadem)
         anim.SetFloat("yVelocity", body.linearVelocity.y);
     }
 
@@ -127,7 +123,7 @@ public class PlayerMovement : MonoBehaviour
                     isCharging = true;
                     chargeTimer += Time.deltaTime;
                     body.linearVelocity = Vector2.zero;
-                    //Debug.Log("Charging: " + chargeTimer);
+                 
                 }
             }
             else { }
@@ -237,7 +233,7 @@ public class PlayerMovement : MonoBehaviour
         if (isControlsReversed)
         {
             Debug.Log("Controls are reversed!");
-            return -input; // Flip it!
+            return -input;
         }
         return input;
     }

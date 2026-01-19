@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class SettingsManager : MonoBehaviour
 {
     [SerializeField] private Toggle musicButton;       
     [SerializeField] private Toggle sfxButton;
-    [SerializeField] private Text musicButtonText;
+    [SerializeField] private TextMeshProUGUI musicButtonText;
 
     private bool isMusicOn = true;
     private bool isSfxOn = true;

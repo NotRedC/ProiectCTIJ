@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicButton: {fileID: 1914545216}
   sfxButton: {fileID: 277470297}
-  musicButtonText: {fileID: 0}
+  musicButtonText: {fileID: 80687007}
 --- !u!4 &1399428023
 Transform:
   m_ObjectHideFlags: 0

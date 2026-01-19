@@ -46,4 +46,14 @@ public class GameSaver : MonoBehaviour
 
         Debug.Log("Game Loaded at: " + x + ", " + y);
     }
+    private void Update()
+    { 
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+        {
+            PlayerPrefs.DeleteAll();
+            Debug.Log("Save Data Deleted!");
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
 }

@@ -4,15 +4,14 @@ public class CameraController : MonoBehaviour
 {
 
     [Header("Target")]
-    public Transform player; // Drag your Player object here
+    public Transform player;
 
     [Header("Zoom Settings")]
-    public float zoomSpeed = 2f;   // How fast it zooms in/out
+    public float zoomSpeed = 2f;   
     private float targetSize;
     private Camera cam;
 
     [Header("Screen Settings")]
-    // Adjust these to match your level design grid
     private float screenWidth = 16f;
     private float screenHeight = 10f;
     public Vector2 offset = new Vector2(0f, 5f);
